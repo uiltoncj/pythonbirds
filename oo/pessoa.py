@@ -20,3 +20,7 @@ if __name__ == '__main__':
     for filho in luciano.filhos:
         print(filho.nome)
     print(Pessoa.olhos)
+    del luciano.filhos
+    luciano.olhos = 1
+    print(luciano.__dict__)
+    print(renzo.__dict__)
